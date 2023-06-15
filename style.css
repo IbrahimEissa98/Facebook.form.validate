@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+}
+            /* Login section */
+.sec-login {
+    width: 100%;
+    height: 625px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-login .login-container {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec-login .login-container .login-title {
+    width: 50%;
+    margin-top: -50px;
+}
+.sec-login .login-container .login-title img {
+    margin-left: -30px;
+}
+.sec-login .login-container .login-title p {
+    font-size: 30px;
+    margin-top: -20px;
+}
+.sec-login .login-container .login-form {
+    width: 40%;
+    text-align: center;
+}
+.sec-login .login-container .login-form form{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aca9a9;
+    padding: 20px;
+    text-align: center;
+}
+.sec-login .login-container .login-form form .typing-places input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 50px;
+    padding: 10px 15px;
+    font-size: 17px;
+    border: 1px solid #c5c3c3;
+    border-radius: 7px;
+}
+.sec-login .login-container .login-form form .typing-places input:focus {
+    outline: 1px solid #3572e2;
+}
+.sec-login .login-container .login-form form .typing-places .formbox {
+    position: relative;
+}
+.sec-login .login-container .login-form form .typing-places .formbox p {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background-color: rgb(161, 9, 9);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    visibility: hidden;
+}
+.sec-login .login-container .login-form form .typing-places .btn-submit {
+    background-color: #3572e2;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sec-login .login-container .login-form form .typing-places .btn-submit:hover {
+    background-color: #1760e9;
+}
+.sec-login .login-container .login-form form a {
+    text-decoration: none;
+    color: #578ae7;
+}
+.sec-login .login-container .login-form form a:hover {
+    text-decoration: underline;
+}
+.sec-login .login-container .login-form form .line {
+    background-color: #c5c3c3;
+    height: 1px;
+    margin: 20px 0;
+}
+.sec-login .login-container .login-form form .btn-newAcc {
+    width: 60%;
+    height: 50px;
+    background-color: #20cf20;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 7px;
+}
+.sec-login .login-container .login-form form .btn-newAcc:hover {
+    background-color: #18b118;
+}
+.sec-login .login-container .login-form .creatPage {
+    margin-top: 30px;
+}
+.sec-login .login-container .login-form .creatPage a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.sec-login .login-container .login-form .creatPage a:hover {
+    text-decoration: underline;
+}
+
+            /* footer */
+footer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container {
+    width: 1000px;
+}
+.footer-container .languages ul {
+    list-style-type: none;
+    display: flex;
+}
+.footer-container .languages ul li a {
+    text-decoration: none;
+    color: #a09e9e;
+    font-size: 15px;
+    margin-right: 12px;
+}
+.footer-container .languages ul li a:hover {
+    text-decoration: underline;
+}
+.footer-container .languages ul .more-languages a {
+    background-color: #ebe6e6;
+    border: 0.5px solid #afadad;
+    color: #5e5c5c;
+    padding: 0px 13px;
+    font-size: 20px;
+}
+.footer-container .languages ul .more-languages a:hover {
+    background-color: #dad7d7;
+    text-decoration: none;
+}
+.footer-container .line {
+    height: 1px;
+    background-color: #dddddd;
+    margin: 10px 0;
+}
+.footer-container .links ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-container .links ul li a {
+    text-decoration: none;
+    color: #a09e9e;
+    margin-right: 14px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.footer-container .links ul li a:hover {
+    text-decoration: underline;
+}
+.footer-container .copyrights {
+    margin-top: 25px;
+    color: #a09e9e;
+    font-size: 14px;
+}
+
+            /* new account */
+.new-account {
+    width: 100%;
+    height: 625px;
+    background-color: #ffffffc9;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.new-account .new-account-container {
+    width: 100%;
+    height: 625px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-account form {
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(194, 191, 191);
+}
+.new-account form .title-part {
+    margin: 5px 20px;
+    position: relative;
+}
+.new-account form .title-part .title {
+    font-size: 35px;
+    line-height: 1.2;
+}
+.new-account form .title-part .supTitle {
+    font-size: 18px;
+    color: #706d6d;
+}
+.new-account form .title-part i {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 25px;
+    color: #706d6d;
+    cursor: pointer;
+}
+.new-account form .title-part i:hover {
+    transform: scale(1.1);
+    color: #383737;
+}
+.new-account form .line {
+    width: 100%;
+    height: 1px;
+    background-color: #c5c3c3;
+    margin-top: 15px;
+}
+.new-account form .form-part {
+    margin: 15px 20px;
+}
+.new-account form .form-part .feild {
+    position: relative;
+}
+.new-account form .form-part .feildsOfname {
+    display: flex;
+    justify-content: space-between;
+}
+.new-account form .form-part .feildsOfname .feild {
+    width: 48.5%;
+    height: 40px;
+    margin-bottom: 0;
+}
+.new-account form .form-part .feild {
+    margin-bottom: 10px;
+}
+.new-account form .form-part .feild input {
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    border: 1px solid #c5c3c3;
+    border-radius: 7px;
+    background-color: #f0efef;
+}
+.new-account form .form-part .feild input:focus {
+    outline: none;
+}
+.new-account form .form-part .feildOfselect {
+    margin: 15px 0 0 0;
+    margin-bottom: 2px;
+}
+.new-account form .form-part .feildOfselect .container {
+    color: #5e5c5c;
+    display: flex;
+}
+.new-account form .form-part .feildOfselect .container  div {
+    position: relative;
+    margin-left: 5px;
+}
+.new-account form .form-part .feildOfselect .container div .dropdown {
+    position: absolute;
+    top: 0;
+    right: 90px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 0 15px rgb(134, 134, 134);
+    border-radius: 7px;
+    padding: 15px 20px;
+    font-size: 15px;
+    z-index: 1;
+    display: none;
+}
+.new-account form .form-part .feildOfselect .container div:hover .dropdown {
+    display: block;
+}
+.new-account form .form-part .feildOfoption {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.new-account form .form-part .feildOfoption select {
+    width: 32%;
+    height: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    border: 1px solid #c5c3c3;
+    border-radius: 7px;
+}
+.new-account form .form-part .feildOfoption select:focus {
+    outline: none;
+}
+.new-account form .form-part .feildOfGender span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 32%;
+    border: 1px solid #c5c3c3;
+    border-radius: 7px;
+    height: 100%;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+.new-account form .form-part .feildOfGender span input {
+    width: 15px;
+}
+.new-account form .form-part .topicEnd p {
+    font-size: 13px;
+    color: #777575;
+    margin-bottom: 10px;
+}
+.new-account form .form-part .topicEnd p a {
+    text-decoration: none;
+    color: #0e47b1;
+}
+.new-account form .form-part .topicEnd p a:hover {
+    text-decoration: underline;
+}
+.new-account form .form-part .submit-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.new-account form .form-part .submit-btn input {
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    background-color: #18b118;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.new-account form .form-part .submit-btn input:hover {
+    background-color: #62b362;
+}
+
+.new-account form .form-part .feild .error-i {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    background-color: rgb(161, 9, 9);
+    color: white;
+    padding: 2px 7px;
+    border-radius: 50%;
+    font-size: 13px;
+    visibility: hidden;
+}
+.new-account form .form-part .feildOfselect .error-i {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    background-color: rgb(161, 9, 9);
+    color: white;
+    padding: 2px 7px;
+    border-radius: 50%;
+    font-size: 13px;
+    visibility: hidden;
+}
+.new-account form .form-part .feild .Error-info {
+    position: absolute;
+    right: 110%;
+    top: 0;
+    width: max-content;
+    border: 1px solid rgb(145, 16, 16);
+    background-color: rgb(201, 29, 29);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    display: none;
+}
+.new-account form .form-part .feild .Error-info i {
+    font-size: 30px;
+    position: absolute;
+    right: -18px;
+    transform: translate(-50%,-80%);
+    color: rgb(201, 29, 29);
+}
+.new-account form .form-part .feild .snError-info {
+    position: absolute;
+    left: 110%;
+    top: 0;
+    width: max-content;
+    border: 1px solid rgb(145, 16, 16);
+    background-color: rgb(201, 29, 29);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    display: none;
+}
+.new-account form .form-part .feild .snError-info i {
+    font-size: 30px;
+    position: absolute;
+    left: -103%;
+    transform: translate(-50%,-80%) rotate(180deg);
+    color: rgb(201, 29, 29);
+}
+.new-account form .form-part .feild .Error-info2 {
+    position: absolute;
+    right: 105%;
+    top: 0;
+    width: max-content;
+    border: 1px solid rgb(145, 16, 16);
+    background-color: rgb(201, 29, 29);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    display: none;
+}
+.new-account form .form-part .feild .Error-info2 i {
+    font-size: 30px;
+    position: absolute;
+    right: -18px;
+    transform: translate(-50%,-80%);
+    color: rgb(201, 29, 29);
+}

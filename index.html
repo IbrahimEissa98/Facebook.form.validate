@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook.com</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons font awesome -->
+    <script src="https://kit.fontawesome.com/26be7d0557.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Facebook clone/images/facebook.png" >
+</head>
+<body>
+    <section class="sec-login">
+        <div class="login-container">
+            <div class="login-title">
+                <img src="dF5SId3UHWd.svg" width="300px" alt="facebook">
+                <p>Facebook helps you connect and share with the people in your life.</p>
+            </div>
+            <div class="login-form">
+                <form action="Facebook clone/index.html" method="get" onsubmit="return loginValidate()">
+                    <div class="typing-places">
+                        <div class="formbox">
+                            <p class="error-i" id="emailLoginError">!</p>
+                            <input type="text" name="EmailorPhone" id="EmailorPhone" placeholder="Email address or phone number">
+                        </div>
+                        <div class="formbox">
+                            <p class="error-i" id="passLoginError">!</p>
+                            <input type="password" name="password" id="password" placeholder="Password" checked>
+                        </div>
+                        <input type="submit" value="Log in" class="btn-submit">
+                    </div>
+                    <a href="#">Forgotten password?</a>
+                    <p class="line"></p>
+                    <input type="button" value="Creat new account" class="btn-newAcc" onclick="openCreatAccount()"></input>
+                </form>
+                <p class="creatPage"><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- new account section -->
+    <section class="new-account" id="creatNewAccount">
+        <div class="new-account-container">
+            <form action="Facebook clone/index.html" method="get" onsubmit="return newAccountValidate()">
+                <div class="title-part">
+                    <h1 class="title">Sign Up</h1>
+                    <p class="supTitle">It's quick and easy.</p>
+                    <i class="fa-solid fa-xmark" id="cancelNewAccount" onclick="closeNewAccount()"></i>
+                </div>
+                <p class="line"></p>
+                <div class="form-part">
+                    <div class="feildsOfname feild">
+                        <div class="feild">
+                            <input type="text" name="FirstName" placeholder="First name" id="FirstName">
+                            <p class="error-i" id="fnSignupError">!</p>
+                            <div class="fnError-info Error-info" id="fnError-info">
+                                <p class="error-title">Please enter valid <q>First Name</q></p>
+                                <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                        </div>
+                        <div class="feild">
+                            <input type="text" name="Surname" placeholder="Surname" id="Surname">
+                            <p class="error-i" id="snSignupError">!</p>
+                            <div class="snError-info Error-info" id="snError-info">
+                                <p class="error-title">Please enter valid <q>Surname</q></p>
+                                <i class="fa-solid fa-caret-right"></i>
+                            </div>
+                        </div>
+                    </div>            
+                    <div class="feildOfemail feild">
+                        <input type="text" name="email" placeholder="Mobile number or email address" id="newEmail">
+                        <p class="error-i" id="emailSignupError">!</p>
+                        <div class="emailError-info Error-info2" id="emailError-info">
+                            <p class="error-title">Please enter valid <q>Email or Phone</q></p>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                    </div>                
+                    <div class="feildOfpass feild">
+                        <input type="password" name="password"  placeholder="New password" id="newpassword" pattern="[A-Za-z1-9]{>8}">
+                        <p class="error-i" id="passSingupError">!</p>
+                        <div class="passError-info Error-info2" id="passError-info">
+                            <p class="error-title">Please enter valid <q>Password</q></p>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                    </div>
+    
+                    <!-- birth Day -->
+                    <div class="feildOfselect feild">
+                        <div class="container">
+                            Date of birth
+                            <div class="container">
+                                <i class="fa-solid fa-circle-question" style="color: #6f747b;cursor: pointer;"></i>
+                                <span class="dropdown">
+                                    <p><strong>Providing your birthday</strong> helps make sure that you get the right Facebook experience for your age. If you want to change who sees this, go to the About section of your profile. For more details, please visit our <a href="#">Privacy Policy</a> .</p>
+                                </span>
+                            </div> 
+                        </div>
+                        <p class="error-i" id="birthSingupError">!</p>
+                    </div>
+                    <div class="feildOfoption feild">
+                        <select name="Day" id="Day" >
+                            <option value="0">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>            
+                        </select>
+                        <select name="Month" id="Month">
+                            <option value="notMonth">Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="Year" id="Year">
+                            <option value="notYear">Year</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1999">1999</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>            
+                        </select>
+                        <div class="birthError-info Error-info2" id="birthError-info">
+                            <p class="error-title">Please enter valid <q>Birth Date</q></p>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                    </div>
+    
+                    <!-- Gender -->
+                    <div class="feildOfselect feild">
+                        <div class="container">
+                            Gender
+                            <div>
+                                <i class="fa-solid fa-circle-question" style="color: #6f747b;cursor: pointer;"></i>
+                                <span class="dropdown">
+                                    <p>You can change who sees your gender on your profile later. Select Custom to choose another gender, or if you'd rather not say.</p>
+                                </span>
+                            </div> 
+                        </div>                    
+                        <p class="error-i" id="genderSingupError">!</p>
+                    </div>
+                    <div class="feildOfoption feildOfGender feild" id="chooseGender">
+                        <span id="gender-box1">
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="Gender" value="Male">
+                        </span>
+                        <span id="gender-box2">
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="Gender" value="Female">
+                        </span>
+                        <span id="gender-box3">
+                            <label for="custom">Custom</label>
+                            <input type="radio" id="custom" name="Gender" value="Custom">
+                        </span>
+                        <div class="genderError-info Error-info2" id="genderError-info">
+                            <p class="error-title">Please choose your <q>Gender</q></p>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </div>
+                    </div>
+    
+                    <div class="topicEnd">
+                        <p>People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn more</a>.</p>
+                        <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a>  and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+                    </div>
+    
+                    <div class="submit-btn">
+                        <input type="submit" value="Sign Up">
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+    <!-- links footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="languages">
+                <ul>
+                    <li><a href="#" title="English">English (UK)</a></li>
+                    <li><a dir="rtl" href="#" title="Arabic">العربية</a></li>
+                    <li><a href="#" title="France">Français (France)</a></li>
+                    <li><a href="#" title="italian">Italiano</a></li>
+                    <li><a href="#" title="German">Deutsch</a></li>
+                    <li><a href="#" title="Russian">Русский</a></li>
+                    <li><a href="#" title="Spanish">Español</a></li>
+                    <li><a href="#" title="Indonesian">Bahasa Indonesia</a></li>
+                    <li><a href="#" title="Turkish">Türkçe</a></li>
+                    <li><a href="#" title="Portuguese (Brazil)">Português (Brasil)</a></li>
+                    <li><a href="#" title="Hindi">हिन्दी</a></li>
+                    <li class="more-languages"><a href="#">+</a></li>
+                </ul>
+            </div>
+            <p class="line"></p>
+            <div class="links">
+                <ul>
+                    <li><a href="#" title="Sign up for Facebook">Sign Up</a></li>
+                    <li><a href="#" title="Log in to Facebook">Log in</a></li>
+                    <li><a href="#" title="Take a look at Messenger.">Messenger</a></li>
+                    <li><a href="#" title="Facebook Lite for Android.">Facebook Lite</a></li>
+                    <li><a href="#" title="Browse our Watch videos.">Watch</a></li>
+                    <li><a href="#" title="Take a look at popular places on Facebook.">Places</a></li>
+                    <li><a href="#" title="Check out Facebook games.">Games</a></li>
+                    <li><a href="#" title="Buy and sell on Facebook Marketplace.">Marketplace</a></li>
+                    <li><a href="#" title="Learn more about Meta Pay">Meta Pay</a></li>
+                    <li><a href="#" title="Discover Meta" target="_blank">Meta Store</a></li>
+                    <li><a href="#" title="Learn more about Meta Quest">Meta Quest</a></li>
+                    <li><a href="#" title="Take a look at Instagram">Instagram</a></li>
+                    <li><a href="#" title="Donate to worthy causes.">Fundraisers</a></li>
+                    <li><a href="#" title="Browse our Facebook Services directory.">Services</a></li>
+                    <li><a href="#" title="See the Voting Information Centre">Voting Information Centre</a></li>
+                    <li><a href="#" title="Learn how we collect, use and share information to support Facebook.">Privacy Policy</a></li>
+                    <li><a href="#" title="Learn how to manage and control your privacy on Facebook.">Privacy Centre</a></li>
+                    <li><a href="#" title="Explore our groups.">Groups</a></li>
+                    <li><a href="#" title="Read our blog, discover the resource centre and find job opportunities.">About</a></li>
+                    <li><a href="#" title="Advertise on Facebook">Create ad</a></li>
+                    <li><a href="#" title="Create a Page">Create Page</a></li>
+                    <li><a href="#" title="Develop on our platform.">Developers</a></li>
+                    <li><a href="#" title="Make your next career move to our brilliant company.">Careers</a></li>
+                    <li><a href="#" title="Learn about cookies and Facebook.">Cookies</a></li>
+                    <li><a href="#" title="Learn about AdChoices.">AdChoices</a></li>
+                    <li><a href="#" title="Review our terms and policies.">Terms</a></li>
+                    <li><a href="#" title="Visit our Help Centre.">Help</a></li>
+                    <li><a href="#" title="Visit our contact uploading and non-users notice.">Contact uploading and non-users</a></li>
+                </ul>
+            </div>
+            <p class="copyrights">Meta 	&copy; 2023</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
